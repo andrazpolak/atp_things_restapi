@@ -1,0 +1,40 @@
+{
+  "name": "atp_things_restapi",
+  "version": "1.0.0",
+  "description": "ATP things RESTAPI",
+  "main": "index.js",
+  "scripts": {
+    "start": "SET NODE_ENV=production && node index.js",
+    "dev": "SET NODE_ENV=development && npm install && nodemon -L",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrazpolak/atp_things_restapi.git"
+  },
+  "keywords": [
+    "atpthings",
+    "restapi"
+  ],
+  "author": "Andraz Polak <andrazpolak@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrazpolak/atp_things_restapi/issues"
+  },
+  "homepage": "https://github.com/andrazpolak/atp_things_restapi#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "atp_things_client_redis": "^1.0.2",
+    "atp_util": "^1.0.1",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "dotenv-flow": "^3.2.0",
+    "express": "^4.17.1"
+  },
+  "atp_things": {
+    "uuid": "b9880a91-941e-4a12-b988-fdd1c3d18c99"
+  }
+}

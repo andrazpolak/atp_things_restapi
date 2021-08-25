@@ -1,0 +1,10 @@
+{
+    "module":
+    {
+        "identity": {
+            "uuid": "2421b8be-55f0-4c3b-b926-0626dddb5b5c",
+            "id_local": "1",
+            "name": "Rest api temperature and pressure "
+        }
+    }
+}

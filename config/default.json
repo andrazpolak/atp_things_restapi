@@ -1,0 +1,17 @@
+{
+    "module": {
+        "identity": {
+            "uuid": "00000000-0000-0000-0000-9093d23b15d1",
+            "type": "module",
+            "vendor": "ATP",
+            "model": "rest_api",
+            "id_local": "1",
+            "name": "default name"
+        },
+        "communication": {
+            "hostname": "redis",
+            "type": "redis",
+            "interval_ms": 1000
+        }
+    }
+}
