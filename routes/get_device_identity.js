@@ -12,7 +12,7 @@ module.exports = async (req, res) => {
             data = await atp_things.get(req.params.uuid, req.params.property);
         else
         {
-            data = await thatp_thingsings.get(req.params.uuid);
+            data = await atp_things.get(req.params.uuid);
         }
     } catch (err) {
         data = { error: err };

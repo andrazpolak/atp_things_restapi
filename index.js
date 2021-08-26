@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cors());
 
 
-app.get('/', (req, res) => {
+app.get('/info', (req, res) => {
     const response = {};
     response.data = {
         name: appInfo.name,
