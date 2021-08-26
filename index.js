@@ -11,7 +11,7 @@ const port = process.env.PORT || 11021;
 const config = require('config');// define process.env.NODE_CONFIG_DIR
 const module_cfg = JSON.parse(JSON.stringify(config.get("module")));
 
-const getDeviceIdentity = require('./routes/get_device_identity');
+const getAtpThings = require('./routes/atp_things');
 
 console.log("Api:", "Started. Env:", process.env.NODE_ENV);
 
@@ -33,9 +33,11 @@ app.get('/info', (req, res) => {
 })
 
 // Rest api service
-app.get('/device/', getDeviceIdentity);
-app.get('/device/:uuid/', getDeviceIdentity);
-app.get('/device/:uuid/:property', getDeviceIdentity);
+app.get('/atp_things/', getAtpThings.atp_things_list);
+app.get('/atp_things/:uuid/', getAtpThings.atp_things_get);
+app.get('/atp_things/:uuid/:property', getAtpThings.atp_things_get);
 app.listen(port, () => console.log('Listening on port ', port))
+
+// TODO: Web socket
 
 console.log("Api:", "End");
